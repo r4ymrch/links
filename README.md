@@ -7,6 +7,7 @@ A Simple and Basic static single page website used to store all link related to 
 ## Features
 
 * **Modern UI style**
+* **Responsive designe**
 * **Great UX**
 * **Absolutely fast go brrr....**
 
