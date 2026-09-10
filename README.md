@@ -14,7 +14,8 @@ A Simple and Basic static single page website used to store all link related to 
 
 ## Credits
 
-* [Nerd Fonts](https://www.nerdfonts.com) - Fonts and icon used in this projects.
+* [Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono?query=jetbrains) - Fonts used.
+* [Iconify](https://iconify.design/) - SVG Icons.
 * [Wallhaven](https://wallhaven.cc) - Coding background.
 
 ---
