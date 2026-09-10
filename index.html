@@ -4,64 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>r4ymrch | link in bio</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="overlay"></div>
     <div class="card-container fade-in">
-      <div class="card-pfp spinning">
+      <div class="card-pfp fade-in-2">
         <img src="assets/img/pfp.avif" alt="profile-picture">
       </div>
-      <div class="card-summary">
+      <div class="card-summary fade-in-3">
         <h1 class="card-username">r4ymrch</h1>
-        <p class="card-desc">Tech Enthusiast, Software Engineer, and student at <a href="https://unj.ac.id" target="_blank" rel="noopener">Universitas Negeri Jakarta</a></p>
+        <p class="card-desc">Tech Enthusiast, Software Engineer, and student at <a href="https://unj.ac.id">Universitas Negeri Jakarta</a></p>
       </div>
-      <div class="card-shortcuts">
-        <button type="button" id="gh-btn"></button>
-        <button class="inactive" type="button" id="li-btn">󰌻</button>
-        <button type="button" id="ig-btn">󰋾</button>
-        <button type="button" id="x-btn"></button>
-        <button class="inactive" type="button" id="fb-btn"></button>
+      <div class="card-shortcuts fade-in-4">
+        <button type="button" id="gh">
+          <svg class="icons-small">
+            <use href="assets/icons.svg#gh" />
+          </svg>
+        </button>
+        <button type="button" id="li">
+          <svg class="icons-small">
+            <use href="assets/icons.svg#li" />
+          </svg>
+        </button>
+        <button type="button" id="x">
+          <svg class="icons-small">
+            <use href="assets/icons.svg#x" />
+          </svg>
+        </button>
+        <button type="button" id="dc">
+          <svg class="icons-small">
+            <use href="assets/icons.svg#dc" />
+          </svg>
+        </button>
+        <button type="button" id="fb">
+          <svg class="icons-small">
+            <use href="assets/icons.svg#fb" />
+          </svg>
+        </button>
       </div>
-      <div class="card-buttons">
-        <button type="button" id="gh-repo-lbtn">
-          <p class="button-icon"></p>
+      <div class="card-buttons fade-in-5">
+        <button type="button" id="repo">
+          <svg class="icons">
+            <use href="assets/icons.svg#repo" />
+          </svg>
           <p>See all my projects</p>
         </button>
         <p class="separator">--- Contact Me ---</p>
-        <button class="inactive" type="button" id="wa-lbtn">
-          <p class="button-icon">󰖣</p>
+        <button type="button" id="wa">
+          <svg class="icons">
+            <use href="assets/icons.svg#wa" />
+          </svg>
           <p>WhatsApp</p>
         </button>
-        <button class="inactive" type="button" id="email-lbtn">
-          <p class="button-icon"></p>
+        <button type="button" id="email">
+          <svg class="icons">
+            <use href="assets/icons.svg#mail" />
+          </svg>
           <p>E-Mail</p>
         </button>
-        <button class="inactive" type="button" id="li-lbtn">
-          <p class="button-icon">󰌻</p>
+        <button type="button" id="li-2">
+          <svg class="icons">
+            <use href="assets/icons.svg#li" />
+          </svg>
           <p>LinkedIn</p>
         </button>
         <p class="separator">--- My Social Media ---</p>
-        <button type="button" id="ig-lbtn">
-          <p class="button-icon">󰋾</p>
+        <button type="button" id="ig">
+          <svg class="icons">
+            <use href="assets/icons.svg#ig" />
+          </svg>
           <p>Instagram [@radityo.h]</p>
         </button>
-        <button type="button" id="x-lbtn">
-          <p class="button-icon"></p>
+        <button type="button" id="x-2">
+          <svg class="icons">
+            <use href="assets/icons.svg#x" />
+          </svg>
           <p>X [@r4ymrch14]</p>
         </button>
-        <button class="inactive" type="button" id="fb-lbtn">
-          <p class="button-icon"></p>
+        <button type="button" id="fb-2">
+          <svg class="icons">
+            <use href="assets/icons.svg#fb" />
+          </svg>
           <p>Facebook [Ray March]</p>
         </button>
-        <button class="inactive" type="button" id="dc-lbtn">
-          <p class="button-icon"></p>
+        <button type="button" id="dc-2">
+          <svg class="icons">
+            <use href="assets/icons.svg#dc" />
+          </svg>
           <p>Discord [r4ymrch_]</p>
         </button>
       </div>
       <div class="card-footer">
-        <p>  2026 r4ymrch. All rights reserved.</p>
-        <p class="credit">Made with ❤️ by <a href="https://github.com/r4ymrch" target="_blank" rel="noopener">r4ymrch</a></p>
+        <p>&#9400; 2026 r4ymrch. All rights reserved.</p>
+        <p class="credit">Made with ❤️ by <a href="https://github.com/r4ymrch">r4ymrch</a></p>
       </div>
     </div>
     <script src="index.js" type="text/javascript" charset="utf-8"></script>
