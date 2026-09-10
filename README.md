@@ -7,7 +7,7 @@ A Simple and Basic static single page website used to store all link related to 
 ## Features
 
 * **Modern UI style**
-* **Responsive designe**
+* **Responsive design**
 * **Great UX**
 * **Absolutely fast go brrr....**
 
@@ -18,8 +18,3 @@ A Simple and Basic static single page website used to store all link related to 
 * [Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono?query=jetbrains) - Fonts used.
 * [Iconify](https://iconify.design/) - SVG Icons.
 * [Wallhaven](https://wallhaven.cc) - Coding background.
-
----
-
-## License
-Free to use and modify for personal needs.
