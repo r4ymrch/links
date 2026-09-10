@@ -13,10 +13,12 @@
     <div id="overlay"></div>
     <div class="card-container fade-in">
       <div class="card-pfp fade-in-2">
-        <img src="assets/img/pfp.avif" alt="profile-picture">
+        <img src="https://github.com/r4ymrch.png" alt="profile-picture">
       </div>
       <div class="card-summary fade-in-3">
-        <h1 class="card-username">r4ymrch</h1>
+        <div class="card-username">
+          <strong id="username"></strong><span class="card-username-cursor">█</span>
+        </div>
         <p class="card-desc">Tech Enthusiast, Software Engineer, and student at <a href="https://unj.ac.id">Universitas Negeri Jakarta</a></p>
       </div>
       <div class="card-shortcuts fade-in-4">
@@ -48,9 +50,6 @@
       </div>
       <div class="card-buttons fade-in-5">
         <button type="button" id="repo">
-          <svg class="icons">
-            <use href="assets/icons.svg#repo" />
-          </svg>
           <p>See all my projects</p>
         </button>
         <p class="separator">--- Contact Me ---</p>
@@ -96,6 +95,12 @@
             <use href="assets/icons.svg#dc" />
           </svg>
           <p>Discord [r4ymrch_]</p>
+        </button>
+        <button type="button" id="yt">
+          <svg class="icons">
+            <use href="assets/icons.svg#yt" />
+          </svg>
+          <p>YouTube [@r4ymrch]</p>
         </button>
       </div>
       <div class="card-footer">

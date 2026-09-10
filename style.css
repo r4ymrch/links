@@ -15,7 +15,7 @@
   --mError: #ffb4ab;
   --mOnError: #690005;
   --mSurface: #0e1415;
-  --mSurfaceAlpha: #0e1415ee;
+  --mSurfaceAlpha: #0e1415ae;
   --mOnSurface: #dde4e4;
   --mSurfaceContainer: #0f1515;
   --mOnSurfaceContainer: #dde4e4;
@@ -34,7 +34,7 @@ body {
   font-family: "JetBrains Mono", monospace;
   color: var(--mOnSurface);
   background-color: var(--mSurface);
-  background-image: linear-gradient(var(--mSurfaceAlpha), var(--mSurface)), url('assets/img/bg.avif');
+  background-image: linear-gradient(var(--mSurfaceAlpha), var(--mSurface)), url('assets/bg.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,11 +61,7 @@ body {
 .card-pfp img {
   width: 156px;
   border-radius: 0.6rem;
-  border: 2px solid var(--mPrimary);
-  transition: all 0.4s ease;
-}
-
-.card-pfp img:hover {
+  border: 3px solid var(--mPrimary);
   box-shadow: 0px 0px 32px 0px var(--mPrimaryGlow);
 }
 
@@ -80,6 +76,13 @@ body {
 .card-username {
   font-size: 1.4rem;
   text-align: center;
+}
+
+.card-username-cursor {
+  color: var(--mPrimary);
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
 }
 
 .card-desc {
@@ -119,9 +122,11 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0);
   color: var(--mOnSurface);
+  transition: all 0.4s ease;
 }
 
-.card-shortcuts button:hover {
+.card-shortcuts button:hover,
+.card-shortcuts button:focus {
   transform: scale(1.2);
   color: var(--mPrimary);
 }
@@ -203,18 +208,6 @@ body {
   color: inherit;
 }
 
-#overlay {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 1vh;
-  background-color: rgba(0, 0, 0, 0.65);
-  z-index: 9999;
-  pointer-events: all;
-  box-shadow: 0px 0px 128px 96px rgba(0, 0, 0, 0.65);
-}
-
 .fade-in {
   animation: fadeInLong 1s ease-out forwards;
   animation-delay: 0.2s;
@@ -222,22 +215,22 @@ body {
 
 .fade-in-2 {
   animation: fadeInShort 1s ease-out forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
 
 .fade-in-3 {
   animation: fadeInShort 1s ease-out forwards;
-  animation-delay: 0.6s;
+  animation-delay: 1.2s;
 }
 
 .fade-in-4 {
   animation: fadeInShort 1s ease-out forwards;
-  animation-delay: 0.8s;
+  animation-delay: 1.6s;
 }
 
 .fade-in-5 {
   animation: fadeInShort 1s ease-out forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .icons {
@@ -255,6 +248,23 @@ body {
 .inactive {
   pointer-events: none;
   opacity: 0.4;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 1vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 9999;
+  pointer-events: all;
+  box-shadow: 0px 0px 128px 96px rgba(0, 0, 0, 0.65);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 @keyframes fadeInLong {
