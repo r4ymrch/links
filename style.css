@@ -285,6 +285,7 @@ body {
 @media (max-width: 768px) {
   .card-container {
     margin: 2rem 1rem 12rem 1rem;
+    padding: 4rem 1rem 3rem 1rem;
   }
   .card-username {
     font-size: 18px;
@@ -293,6 +294,9 @@ body {
     font-size: 12px;
   }
   .card-buttons button {
+    font-size: 11px;
+  }
+  .card-footer p {
     font-size: 11px;
   }
   .icons {
