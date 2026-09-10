@@ -54,7 +54,7 @@ function typeLoop() {
   let typeSpeed = isDeleting ? 100 : 200; // ms
 
   if (!isDeleting && charIndex === currentWord.length) {
-    typeSpeed = 3500; // delay antar kalimat
+    typeSpeed = 3500; // delay kalimat
     isDeleting = true;
   } else if (isDeleting && charIndex === 0) {
     isDeleting = false;
