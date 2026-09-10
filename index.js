@@ -17,21 +17,21 @@ var links = [
    { id: "ig", url: "https://www.instagram.com/radityo.h" }
 ];
 
-// links.forEach((item) => {
-//    const element = document.getElementById(item.id);
-//
-//    if (element) {
-//       element.addEventListener("click", function () {
-//          if (item.url.startsWith("mailto:")) {
-//             window.location.href = item.url;
-//          } else {
-//             setTimeout(function () {
-//                window.location.href = item.url;
-//             }, delay);
-//          }
-//       });
-//    }
-// });
+links.forEach((item) => {
+   const element = document.getElementById(item.id);
+
+   if (element) {
+      element.addEventListener("click", function () {
+         if (item.url.startsWith("mailto:")) {
+            window.location.href = item.url;
+         } else {
+            setTimeout(function () {
+               window.location.href = item.url;
+            }, delay);
+         }
+      });
+   }
+});
 
 // animasi text
 const textElement = document.getElementById("username");
